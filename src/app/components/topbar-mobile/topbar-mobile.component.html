@@ -1,0 +1,110 @@
+<div
+  class="w-full p-3 bg-gradient-to-b from-yellow-600 via-orange-400 to-orange-500 flex items-center justify-between shadow-gray-300 shadow-md z-50 fixed"
+>
+    <label class="hamburger">
+      <input type="checkbox" (click)="MobileMenu()">
+      <svg viewBox="0 0 32 32">
+        <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+        <path class="line" d="M7 16 27 16"></path>
+      </svg>
+    </label>
+  
+  <div>
+    <p class="text-2xl font-medium text-white uppercase">Slaca</p>
+  </div>
+  <div class="flex items-center justify-end">
+    <div class="h-8 w-8">
+      <img
+        src="../assets/image-icone.png"
+        class="h-8 w-8 rounded-full z-0 cursor-pointer"
+      />
+    </div>
+    <div
+      class="h-3 w-3 rounded-full bg-red-500 flex items-center justify-center -translate-x-2 -translate-y-2"
+    >
+      <p class="text-white text-xs font-semibold cursor-pointer">5</p>
+    </div>
+  </div>
+</div>
+<ul
+  [ngClass]="{
+    'fixed top-0 z-50 bg-white mt-14 w-3/5 h-fit shadow-2xl md:hidden flex flex-col gap-4 text-medium duration-200':
+      isOpen,
+    'right-[-100%]': !isOpen
+  }"
+>
+  <ul [ngClass]="{ 'block text-sm': isOpen, hidden: !isOpen }">
+    <li
+      class="flex border-b-[1px] border-gray-500 border-opacity-25 hover:bg-[#fdf1eb]"
+    >
+      <a
+        href="#"
+        class="inline-block border-l-4 w-full py-[5px] border-transparent hover:text-gray-600 hover:border-orange-500"
+      >
+        <p class="hover:translate-x-2 hover:transition px-6 text-amber-950">
+          Apresentação
+        </p>
+      </a>
+    </li>
+    <li
+      class="flex border-b-[1px] border-gray-500 border-opacity-25 hover:bg-[#fdf1eb]"
+    >
+      <a
+        href="#"
+        class="inline-block border-l-4 w-full py-[5px] border-transparent hover:text-gray-600 hover:border-orange-500"
+      >
+        <p class="hover:translate-x-2 hover:transition px-6 text-amber-950">
+          Comitês
+        </p>
+      </a>
+    </li>
+    <li
+      class="flex border-b-[1px] border-gray-500 border-opacity-25 hover:bg-[#fdf1eb]"
+    >
+      <a
+        href="#"
+        class="inline-block border-l-4 w-full py-[5px] border-transparent hover:text-gray-600 hover:border-orange-500"
+      >
+        <p class="hover:translate-x-2 hover:transition px-6 text-amber-950">
+          Autores
+        </p>
+      </a>
+    </li>
+    <li
+      class="flex border-b-[1px] border-gray-500 border-opacity-25 hover:bg-[#fdf1eb]"
+    >
+      <a
+        href="#"
+        class="inline-block border-l-4 w-full py-[5px] border-transparent hover:text-gray-600 hover:border-orange-500"
+      >
+        <p class="hover:translate-x-2 hover:transition px-6 text-amber-950">
+          Eixos temáticos
+        </p>
+      </a>
+    </li>
+    <li
+      class="flex border-b-[1px] border-gray-500 border-opacity-25 hover:bg-[#fdf1eb]"
+    >
+      <a
+        href="#"
+        class="inline-block border-l-4 w-full py-[5px] border-transparent hover:text-gray-600 hover:border-orange-500"
+      >
+        <p class="hover:translate-x-2 hover:transition px-6 text-amber-950">
+          Trabalhos
+        </p>
+      </a>
+    </li>
+    <li
+      class="flex border-b-[1px] border-gray-500 border-opacity-25 hover:bg-[#fdf1eb]"
+    >
+      <a
+        href="#"
+        class="inline-block border-l-4 w-full py-[5px] border-transparent hover:text-gray-600 hover:border-orange-500"
+      >
+        <p class="hover:translate-x-2 hover:transition px-6 text-amber-950">
+          Contato
+        </p>
+      </a>
+    </li>
+  </ul>
+</ul>
