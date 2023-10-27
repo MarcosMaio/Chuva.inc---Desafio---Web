@@ -16,7 +16,4 @@ export class CriarTopicoComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
- 
-
 }
